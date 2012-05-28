@@ -21,9 +21,9 @@ public class CambiarTitulo extends JFrame implements ActionListener { // 1) Impl
         pack();
         setVisible(true);
     }
-    
+    /* Se implementa los métodos de la interface (aquí solo uno) */
     public void actionPerformed(ActionEvent evt) {
-        Object fuente = evt.getSource();
+        Object fuente = evt.getSource();//El método nos devuelve un objeto event, que podemos usar para detectar el componente que lo ha producido
         if (fuente == b1) {
             setTitle("Curso de JavaScriptsssssssssssssssssssssssss");
         } else if (fuente == b2) {
