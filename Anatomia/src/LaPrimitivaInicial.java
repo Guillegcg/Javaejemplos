@@ -28,7 +28,9 @@ public class LaPrimitivaInicial extends JFrame {
     JLabel etiquetaObtener5 = new JLabel("5 de 6: ", JLabel.RIGHT);
     JTextField obtener5 = new JTextField("0");
     JLabel etiquetaObtener6 = new JLabel("6 de 6: ", JLabel.RIGHT);
-    JTextField obtener6 = new JTextField("0");
+    JTextField obtener6 = new JTextField("0", 10);
+    JLabel etiquetaIntentos = new JLabel("Intentos: ", JLabel.RIGHT);
+    JTextField intentos = new JTextField("0");
     JLabel etiquetaYears = new JLabel("Años: ", JLabel.RIGHT);
     JTextField years = new JTextField();
     
@@ -83,8 +85,14 @@ public class LaPrimitivaInicial extends JFrame {
         obtener5.setEditable(false);
         fila4.add(obtener5);
         fila4.add(etiquetaObtener6);
-        obtener6.setEditable(true);
+        obtener6.setEditable(false);
         fila4.add(obtener6);
+        fila4.add(etiquetaIntentos);
+        intentos.setEditable(false);
+        fila4.add(intentos);
+        fila4.add(etiquetaYears);
+        years.setEditable(false);
+        fila4.add(years);
         add(fila4);
         
         setVisible(true);
